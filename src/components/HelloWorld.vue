@@ -41,7 +41,7 @@ export default {
   methods: {
     @log()
     getData() {
-        console.log('获取数据')
+        console.log('获取数据');
     }
   },
   props: {
