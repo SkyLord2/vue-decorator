@@ -35,18 +35,18 @@ import { log } from '../utils/log';
 
 export default {
   name: 'HelloWorld',
+  props: {
+    msg: String
+  },
   created() {
     this.getData();
   },
   methods: {
     @log()
     getData() {
-        console.log('获取数据');
+      console.log('获取数据');
     }
   },
-  props: {
-    msg: String
-  }
 }
 </script>
 
