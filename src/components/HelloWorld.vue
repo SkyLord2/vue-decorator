@@ -31,8 +31,19 @@
 </template>
 
 <script>
+import { log } from '../utils/log';
+
 export default {
   name: 'HelloWorld',
+  created() {
+    this.getData();
+  },
+  methods: {
+    @log()
+    getData() {
+        console.log('获取数据')
+    }
+  },
   props: {
     msg: String
   }

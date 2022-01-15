@@ -8,7 +8,11 @@ module.exports = {
     'eslint:recommended'
   ],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+    ecmaFeatures:{
+      // 支持装饰器
+      legacyDecorators: true
+    }
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
